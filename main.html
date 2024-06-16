@@ -6,22 +6,28 @@
 /* Global styles */
 table {
     border-collapse: collapse;
-    margin: 10px;
+    margin: 8px;
     padding: 1px;
 }
 td {
     border: 1px solid black;
-    padding: 1px;
 }
 
+	h1 {
+		margin: 1px;
+		font-size: 18px;
+	}
 /* Table 1 styles */
 #table-1 {
     border: 1px solid black;
-	width: 70%;
+	width: 100%;
+	  padding: 1px;
+	margin: 5px;
 }
+
 #table-1 td {
+	border: 2px solid black;
     width: 100px;
-    height: 30px;
 }
 #table-1 .center {
     text-align: center;
@@ -29,34 +35,40 @@ td {
 #table-1 .right {
     text-align: right;
 }
-
+#table-1 tr:last-child td {
+	 border-bottom: 1px solid black; /* Updated to include the color */
+    border-collapse: collapse;
+}
+	
 /* Table 2 styles */
 #table-2 {
     border: 1px solid black;
-	width: 70%;
+	border-collapse: collapse;
+	width: 100%;
 }
 #table-2 td {
     width: 50px;
     height: 20px;
 }
 #table-2 tr:first-child td {
-    background-color: #ccc;
+    font-weight: bold;
+}
+
+	}
+#table-2 tr:last-child td {
     font-weight: bold;
 }
 
 /* Table 3 styles */
 #table-3 {
     border: 1px solid black;
-	width: 70%;
+	width: 100%;
 }
 #table-3 img{
     border: 1px solid black;
-	width: 90%;
-	justify-content: center;
 }
 
 #table-3 td {
-    width: 100px;
     height: 15px;
 	justify-content: center;
 }
@@ -91,52 +103,36 @@ td {
 
 <br>
 
+
 <table id="table-2">
+	<tr>
+		<td colspan="6"></td>
+	</tr>
+  <tr>
+    <td rowspan="4">1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>3</td>
+    <td>1</td>
+	<td>1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+  </tr> 
+	 <tr>
+    <td>3</td>
+  </tr>
+	<tr>
+    <td>4</td>
+    <td>4</td>
+    <td>5</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
   <tr>
     <td colspan="6"></td>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
 </table>
-
 <br>
 
 <table id="table-3">
@@ -144,7 +140,6 @@ td {
     <td colspan="2"></td>
   </tr>
   <tr>
-    <td></td>
     <td><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Michael Jordan Slam Dunk"></td>
   </tr>
   <tr>
