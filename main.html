@@ -13,20 +13,20 @@ td {
     border: 1px solid black;
 }
 
-	h1 {
-		margin: 1px;
-		font-size: 18px;
-	}
+h1 {
+    margin: 1px;
+    font-size: 18px;
+}
 /* Table 1 styles */
 #table-1 {
     border: 1px solid black;
-	width: 95%;
-	  padding: 1px;
-	margin: 5px;
+    width: 95%;
+    padding: 1px;
+    margin: 5px;
 }
 
 #table-1 td {
-	border: 2px solid black;
+    border: 2px solid black;
     width: 100px;
 }
 #table-1 .center {
@@ -36,43 +36,48 @@ td {
     text-align: right;
 }
 #table-1 tr:last-child td {
-	 border-bottom: 4px double black; /* Updated to include the color */
+    border-bottom: 4px double gray; /* Updated to include the color */
 }
-	
+
 /* Table 2 styles */
 #table-2 {
-	border-right: 2px solid black;
-	border-left: 2px solid black;
-	border-collapse: collapse;
-	width: 95%;
-	
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-collapse: collapse;
+    width: 95%;
 }
 #table-2 td {
     width: 50px;
     height: 20px;
 }
+#table-2 tr td {
+    border-top: 2px solid black;
+}
 #table-2 tr:first-child td {
-	border: 2px solid black;
+    border: 2px solid black;
 }
-
-	}
 #table-2 tr:last-child td {
-	border: 2px solid black;
+    border: 2px solid black;
 }
-
+#t21 {
+    border: none;
+    border-bottom: 2px solid black;
+}
 /* Table 3 styles */
 #table-3 {
-    border: 1px solid black;
-	width: 95%;
+    border: 2px solid gray;
+    width: 95%;
 }
-#table-3 img{
+#table-3 img {
     border: 1px solid black;
-	
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #table-3 td {
     height: 15px;
-	justify-content: center;
+    justify-content: center;
 }
 #table-3 tr:first-child {
     background-color: green;
@@ -105,26 +110,27 @@ td {
 
 <br>
 
-
 <table id="table-2">
-	<tr>
-		<td colspan="6"></td>
-	</tr>
+  <tr>
+    <td id="t21" colspan="6"></td>
+  </tr>
   <tr>
     <td rowspan="4">1</td>
     <td>1</td>
     <td>1</td>
     <td>3</td>
     <td>1</td>
-	<td>1</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>2</td>
-  </tr> 
-	 <tr>
+    <td colspan="3" rowspan="2"></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>3</td>
   </tr>
-	<tr>
+  <tr>
     <td>4</td>
     <td>4</td>
     <td>5</td>
@@ -135,6 +141,7 @@ td {
     <td colspan="6"></td>
   </tr>
 </table>
+
 <br>
 
 <table id="table-3">
